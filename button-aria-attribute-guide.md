@@ -11,7 +11,7 @@
 | **aria-busy**            | *Yes*                       | When the button’s contents are **loading or updating**.                            | `<button aria-busy="true">Saving...</button>`                      | Rare but valid.                                                               |
 | **aria-haspopup**        | *Yes*                       | When button opens a dialog or popup.                                               | `<button aria-haspopup="menu">Options</button>`                    | Don’t misuse it for simple dropdowns.                                         |
 | **aria-roledescription** | Use cautiously              | Custom role description for AT users.                                              | `<button aria-roledescription="chat send">Send</button>`           | Can confuse users; rarely appropriate.                                        |
-| **role="button"**        | *Never on real `<button>`* | Not needed.                                                                        | (Do not use)                                                         | Use only for non-button elements acting as buttons.                           |
+| **role="button"**        | *Never on real `<button>`* | Not needed.                                                                        | (Do not use)                                                         | all non-button elements acting as buttons should be real `<button>` instead and never use this role for real `<button>`                           |
 
 **NOTE:** Update the ARIA attribute values based on the **current state**, e.g.:  
 - `aria-expanded="true"` / `"false"`  
